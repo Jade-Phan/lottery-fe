@@ -18,7 +18,8 @@ let web3;
 //typeof is used to check if window is defined 
 if (typeof window !== 'undefined' && typeof window.web3 !== 'undefined') {
   // We are in the browser and metamask is running.
-  //Connect metamask to the webapp 
+  //Connect metamask to the webapp
+  console.log(window) 
   window.ethereum.enable(); 
   web3 = new Web3(window.web3.currentProvider);
 } else {
